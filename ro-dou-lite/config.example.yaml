@@ -1,0 +1,62 @@
+# Ro-DOU Lite Configuration Example
+# Copy this file to config.yaml and customize for your needs
+
+inlabs:
+  # INLABS portal credentials (required)
+  username: "your_email@example.com"
+  password: "your_password"
+
+  # Where to download temporary files (optional)
+  # Default: ~/ro-dou/data/downloads
+  download_path: "/home/pi/ro-dou/data/downloads"
+
+database:
+  # SQLite database file path (required)
+  path: "/home/pi/ro-dou/data/dou_articles.db"
+
+  # How many days to keep in database (optional, default: 365)
+  retention_days: 365
+
+# Search configurations (required, at least one)
+searches:
+  # Example 1: Simple keyword search
+  - terms:
+      - "LGPD"
+      - "lei geral de proteção de dados"
+      - "acesso à informação"
+    sections:
+      - "DO1"  # Seção 1
+      - "DO2"  # Seção 2
+    departments:
+      - "Ministério da Gestão"
+
+  # Example 2: Another search with different terms
+  - terms:
+      - "governo aberto"
+      - "dados abertos"
+    sections:
+      - "DO1"
+      - "DO3"
+
+# Email notifications (optional)
+notifications:
+  email:
+    # SMTP server settings
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+
+    # Sender email
+    from: "ro-dou-alerts@example.com"
+
+    # Recipients (list)
+    to:
+      - "destination1@example.com"
+      - "destination2@example.com"
+
+    # SMTP authentication (optional, needed for Gmail)
+    # For Gmail, use an "App Password": https://support.google.com/accounts/answer/185833
+    username: "ro-dou-alerts@example.com"
+    password: "your_app_password_here"
+
+    # Use TLS (optional, default: true for port 587)
+    use_tls: true
