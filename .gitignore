@@ -139,3 +139,15 @@ test_notrack/
 dags/airflow-mantainance/db-bkp
 **/mnt/pgdata/
 **/mnt/airflow-logs
+
+# INLABS examples (XMLs, ZIPs)
+inlabs/*.xml
+inlabs/*.zip
+inlabs/*.json
+
+# Ro-DOU Lite data and logs
+ro-dou-lite/data/
+ro-dou-lite/logs/
+ro-dou-lite/config.yaml
+ro-dou-lite/.pytest_cache/
+ro-dou-lite/htmlcov/
