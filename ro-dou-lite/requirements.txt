@@ -1,0 +1,16 @@
+# Ro-DOU Lite - Raspberry Pi 3 Optimized Dependencies
+# Target: Python 3.10+, RAM usage <250MB
+
+# XML Parsing
+beautifulsoup4>=4.12.0,<5.0.0
+lxml>=4.9.0,<5.0.0
+
+# Configuration
+PyYAML>=6.0,<7.0
+
+# HTTP Client for INLABS
+requests>=2.31.0,<3.0.0
+
+# Testing (optional, install separately)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
