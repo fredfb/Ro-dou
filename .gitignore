@@ -140,10 +140,11 @@ dags/airflow-mantainance/db-bkp
 **/mnt/pgdata/
 **/mnt/airflow-logs
 
-# INLABS examples (XMLs, ZIPs)
+# INLABS examples (XMLs, ZIPs, extracted directories)
 inlabs/*.xml
 inlabs/*.zip
 inlabs/*.json
+inlabs/S*/
 
 # Ro-DOU Lite data and logs
 ro-dou-lite/data/
